@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sangeetha Vengadeshwaran | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Space Grotesk',sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,0.85);
+  color:#fff;
+  z-index:1000;
+}
+
+.logo{
+  font-weight:700;
+}
+
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+}
+
+.menu-toggle span{
+  width:25px;
+  height:3px;
+  background:#fff;
+  margin:4px 0;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+.nav-links li a{
+  text-decoration:none;
+  color:#fff;
+  font-size:14px;
+  opacity:0.85;
+  transition:0.3s;
+}
+
+.nav-links li a:hover{
+  opacity:1;
+}
+
+@media(max-width:768px){
+  .menu-toggle{
+    display:flex;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    right:0;
+    background:rgba(0,0,0,0.95);
+    flex-direction:column;
+    width:250px;
+    padding:20px;
+    display:none;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+}
+
+/* ================= SECTIONS ================= */
+section{
+  min-height:100vh;
+  padding:150px 8% 80px 8%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+}
+
+#home{ background:linear-gradient(135deg,#ff416c,#ff4b2b);}
+#experience{ background:linear-gradient(135deg,#00c6ff,#0072ff);}
+#education{ background:linear-gradient(135deg,#11998e,#38ef7d);}
+#skills{ background:linear-gradient(135deg,#ff7eb3,#ff758c);}
+#references{ background:linear-gradient(135deg,#667eea,#764ba2);}
+#personal{ background:linear-gradient(135deg,#f7971e,#ffd200);}
+
+/* ================= PROFILE SECTION ================= */
+.profile-pic{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid white;
+  margin-bottom:20px;
+  box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+/* ================= CARD ================= */
+.card{
+  background:rgba(255,255,255,0.18);
+  padding:30px;
+  border-radius:18px;
+  backdrop-filter:blur(12px);
+  max-width:900px;
+  margin:20px 0;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+.card ul{
+  text-align:left;
+  margin-top:15px;
+}
+
+h1{
+  font-size:36px;
+  margin-bottom:20px;
+}
+
+h2{
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+p{
+  line-height:1.6;
+  margin-bottom:10px;
+}
+
+footer{
+  margin-top:40px;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">SANGEETHA VENGADESHWARAN</div>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#references">References</a></li>
+    <li><a href="#personal">Personal</a></li>
+  </ul>
+</nav>
+
+<section id="home">
+  <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+  <h1>SANGEETHA VENGADESHWARAN</h1>
+  <p><strong>Bachelor of Business Administration (Hons)</strong></p>
+
+  <div class="card">
+    <p><strong>Email:</strong> sangeeshwaran6@gmail.com</p>
+    <p><strong>Phone:</strong> +60165135977</p>
+    <p><strong>Address:</strong> 23 Dataran Rapat Baru 10, Medan Lapangan Sentosa, 31350, Ipoh, Perak, Malaysia.</p>
+    <p><strong>Summary:</strong> I am keen to be part of a growth-oriented company, contribute high-quality innovative ideas by implementing my education and skills, and show my dedication towards work.</p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h1>Work Experience</h1>
+
+  <div class="card">
+    <h2>McDonald's Jalan Gopeng</h2>
+    <p><strong>Position:</strong> Barista (Part-Time)</p>
+    <p><strong>Dates:</strong> Jan 2022 – Present</p>
+  </div>
+
+  <div class="card">
+    <h2>Symphony Suites Hotel, Perak</h2>
+    <p><strong>Position:</strong> Front Desk Receptionist</p>
+    <p><strong>Dates:</strong> Sept 2020 – Nov 2021</p>
+    <ul>
+      <li>Handled guests and administrative tasks.</li>
+      <li>Directed clients within the hotel.</li>
+      <li>Maintained visitor logs and security procedures.</li>
+      <li>Answered and forwarded calls.</li>
+      <li>Scheduled reservations and appointments.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Spirit Media & Paper Marketing Sdn Bhd</h2>
+    <p><strong>Position:</strong> Junior Data Assistant (Intern)</p>
+    <p><strong>Dates:</strong> Oct 2019 – Dec 2019</p>
+    <ul>
+      <li>Sorted and traced company invoices.</li>
+      <li>Managed cheques and banking processes.</li>
+      <li>Updated accounting records.</li>
+      <li>Handled supplier and courier communication.</li>
+      <li>Settled outstanding payments.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <h1>Education</h1>
+  <div class="card">
+    <p><strong>BBA (Hons)</strong> – UTAR Kampar (2019)</p>
+    <p><strong>Foundation in Business</strong> – Quest International University (2015)</p>
+    <p><strong>SPM Science Stream</strong> – SMK Methodist Girls' School (2009)</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h1>Skills</h1>
+  <div class="card">
+    <p><strong>Computer:</strong> Microsoft Office (Word, Excel, PowerPoint, Outlook)</p>
+    <p><strong>Professional:</strong> Adaptable, Team-Oriented, Creative Problem Solver, Punctual</p>
+    <p><strong>Licenses:</strong> B2 & D</p>
+    <ul>
+      <li>English – Advanced</li>
+      <li>Malay – Advanced</li>
+      <li>Tamil – Spoken Advanced</li>
+    </ul>
+  </div>
+</section>
+
+<section id="references">
+  <h1>References</h1>
+  <div class="card">
+    <p>Ms. Koay Ying Yin – UTAR</p>
+    <p>Mr. Iskandar – Sunway College</p>
+    <p>Dr. Ramesh – UTAR Kampar</p>
+    <p>Mr. Vasudevan Selvam – Spirit Media</p>
+  </div>
+</section>
+
+<section id="personal">
+  <h1>Personal Details</h1>
+  <div class="card">
+    <p><strong>Date of Birth:</strong> 19 December 1996</p>
+    <p><strong>Nationality:</strong> Malaysian</p>
+  </div>
+  <footer>© 2026 Sangeetha Vengadeshwaran</footer>
+</section>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
